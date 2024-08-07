@@ -16,8 +16,27 @@ html {
 }
 
 :root {
+  --dark-op: #111111cc;
   --dark: #111;
+  --gold-op: #ffd900cc;
   --gold: #ffd700;
+  --oran-op: #ff4500cc;
   --oran: #ff4500;
+}
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-size: #fff;
+  position: relative;
+}
+
+.floating-bg {
+  width: 70rem;
+  height: 70rem;
+  background: var(--dark-op);
+  position: absolute;
+  top: 15%;
+  left: calc(50% - 35rem);
 }
 
