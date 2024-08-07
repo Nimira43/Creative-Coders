@@ -16,27 +16,51 @@ html {
 }
 
 :root {
-  --dark-op: #111111cc;
   --dark: #111;
-  --gold-op: #ffd900cc;
-  --gold: #ffd700;
-  --oran-op: #ff4500cc;
+  --oran-op-1: #ff45001a;
+  --oran-op-d: #ff4500cc;
   --oran: #ff4500;
+}
+body {
+  overflow-x: hidden;  
 }
 
 .section-1 {
   width: 100%;
   height: 100vh;
-  background-size: #fff;
+  background-color: var(--dark);
   position: relative;
 }
 
 .floating-bg {
-  width: 70rem;
-  height: 70rem;
-  background: var(--dark-op);
+  width: 150vw;
+  height: 150vw;
+  background: var(--oran-op-d);
   position: absolute;
-  top: 15%;
-  left: calc(50% - 35rem);
+  top: -125vw;
+  left: calc(50% - 75vw);
+  border-radius: 45%;
+  animation: rotate 30s infinite;
+}
+
+.floating-bg::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--oran-op-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+  animation: rotate 30s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
