@@ -64,3 +64,39 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .floating-bg {
+    top: -110vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -100vw;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  .floating-bg {
+    top: -90vw;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+  .floating-bg {
+    top: -70vw;
+  }
+}
