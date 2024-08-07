@@ -20,6 +20,7 @@ html {
   --oran-op-1: #ff45001a;
   --oran-op-d: #ff4500cc;
   --oran: #ff4500;
+  --gold: #ffd700;
 }
 body {
   overflow-x: hidden;  
@@ -63,6 +64,35 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  position: relative;
+  z-index: 20;
+  top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-link {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: var(--dark);
+  width: 1.5rem;
+  word-wrap: break-word;
+  transition: all 0.5s;
+}
+
+.navbar-link:hover {
+  padding: 7rem 2rem 0 2rem;
+  width: 15rem;
+  color: var(--oran);
+  background-color: var(--dark);
+  transition: all 2.5s;
+  border-radius: 5rem;
+}
+
 
 @media (max-width: 1400px) {
   .floating-bg {
